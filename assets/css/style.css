@@ -1,0 +1,159 @@
+@import "https://unpkg.com/open-props";
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/assets/images/two-lovers.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.bloc-left{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 60%;
+}
+
+.title{
+    margin-top: 15rem;
+    margin-left: 7rem;
+    width: 100%;
+    color: white;
+    animation: var(--animation-slide-in-right);
+}
+
+h1{
+    font-size: 5rem;
+    color: var(--pink-6);
+}
+
+.title p{
+    font-size: 2rem;
+    font-family: Luxurious Roman, sans-serif
+}
+
+h1, h2{
+    font-family: Luxurious Roman, sans-serif;
+}
+
+/*Bloc Right*/
+
+.bloc-right{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: 1px solid white;
+    width: 40%;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    color: var(--pink-7);
+    text-shadow: 1px 1px 2px var(--pink-3);
+    text-transform: uppercase;
+    animation: var(--animation-blink);
+}
+
+.bloc-right .login{
+    text-align: center;
+}
+
+.bloc-right .login a{
+    color: var(--pink-5);
+    text-decoration: none;
+}
+
+.bloc-right i{
+    font-size: 30px;
+    margin-left: 10px;
+    color: var(--pink-2);
+    animation: var(--animation-pulse);
+}
+
+form{
+    width: 100%;
+    height: 500px;
+    margin-top: 70px;
+    padding: 20px 80px;
+
+}
+
+label{
+   color: white;
+   font-size: 20px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 5px solid #fff;
+    background-color: transparent;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+input:focus:valid{
+    border-color: var(--green-9);
+}
+
+input:focus:invalid{
+    border-color: var(--red-9);
+}
+
+input::placeholder{
+    color: var(--pink-2);
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    margin: 50px auto;
+    padding: 5px 0;
+    font-family: Luxurious Roman, sans-serif;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--pink-9);
+    color: var(--red-2);
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+.copy{
+    text-align: center;
+    color: #e2e2e2;
+}
+
+@media screen and (max-width: 850px) {
+    .bloc-left{
+        display: none;
+    }
+
+    .bloc-right{
+        width: 100%;
+    }
+
+}
+
+/* Image from Annette Sousa */
