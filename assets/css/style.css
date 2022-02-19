@@ -10,6 +10,7 @@
 body{
     background-image: url('/assets/images/two-lovers.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
